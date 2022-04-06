@@ -5,22 +5,31 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css">
     <link rel="stylesheet" href="index.css">
     <title>Unit Converter</title>
 </head>
 
-<body>
+<body class="light">
     <div class="wrapper"> 
+        
+        <!--Toggle Switch-->
         <div class="container">
-            <div><img src="images/light.png" alt="dark-mode-icon" id="icon"></div>
-            <div><p>Dark mode</p></div>
+            <input type="checkbox" class="checkbox" id="switch"/>
+            <label for="switch">
+                <i class="fa-solid fa-sun"></i>
+                <i class="fa-solid fa-moon"></i>
+                <span class="ball"></span>
+            </label>
         </div>
 
+        <!--Main Screen-->
         <div class="screen-section">
             <h1>Metric/Imperial unit conversion</h1>
             <input type="number" name="" id="textbox_id" placeholder="0" oninput="calC()">
         </div>
 
+        <!--Result Conversions-->
         <div class="conversion-section">
             <div class="conversion-container">
                 <div class="conversion-result length">
@@ -41,6 +50,12 @@
         </div>
 
     </div>
+
+    <!--Footer Section-->
+    <footer>
+        <p><span>Coded by <a href="github.com/lhorla">Titilola Shittu</a></span></p>
+    </footer>
+
     <script src="index.js"></script>
 </body>
 </html>
