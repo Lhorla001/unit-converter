@@ -142,8 +142,7 @@ a:hover {
     footer {
         font-size: 0.875rem;
         margin-top: 5rem;
-        display: inline-block;
+        width: 600px;
     }
-    
 }
 
