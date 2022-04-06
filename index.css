@@ -105,6 +105,10 @@ a:hover {
 
 /* Media Queries For Mobile */
 @media screen and (max-width: 1024px) {
+    .wrapper {
+        flex-basis: 100%;
+    }
+
     p {
         line-height: 1.25rem;
     }
@@ -142,7 +146,6 @@ a:hover {
     footer {
         font-size: 0.875rem;
         margin-top: 5rem;
-        width: 50vw;
     }
 }
 
