@@ -94,8 +94,14 @@ footer {
 
 footer a { 
     color: hsl(228, 45%, 44%); 
+    text-decoration: none;
+    color: none;
 }
 
+a:hover {
+    cursor: pointer;
+    color: var(--result-header)
+}
 
 /* Media Queries For Mobile */
 @media screen and (max-width: 1024px) {
@@ -119,6 +125,18 @@ footer a {
     .conversion-result .conversion-type {
         font-size: 0.875rem;
         line-height: 1.25rem;
+    }
+
+    .length {
+        margin-top: 3rem;
+    }
+
+    .volume {
+        margin-top: 2rem;
+    }
+
+    .mass {
+        margin-top: 2rem;
     }
 
     footer {
