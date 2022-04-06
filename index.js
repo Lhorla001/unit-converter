@@ -7,7 +7,7 @@ function calC() {
     let userInput = document.getElementById('textbox_id').value
     let meterConversion = userInput * oneMeter;
     let litresConversion = userInput * oneLitre;
-    let kilogramConversion = userInput * oneKilogram;
+    let kilogramsConversion = userInput * oneKilogram;
     
     document.getElementById("meter-conversion").textContent = meterConversion.toFixed(3);
     document.getElementById("meter-conversion-2").textContent = meterConversion.toFixed(3);
@@ -17,14 +17,9 @@ function calC() {
     document.getElementById("litres-conversion-2").textContent = litresConversion.toFixed(3);
     document.getElementById("user-input-3").textContent = userInput;
     document.getElementById("user-input-4").textContent = userInput;
-    document.getElementById("kilogram-conversion").textContent = kilogramConversion.toFixed(3);
-    document.getElementById("kilogram-conversion-2").textContent = kilogramConversion.toFixed(3);
+    document.getElementById("kilograms-conversion").textContent = kilogramsConversion.toFixed(3);
+    document.getElementById("kilograms-conversion-2").textContent = kilogramsConversion.toFixed(3);
     document.getElementById("user-input-5").textContent = userInput;
     document.getElementById("user-input-6").textContent = userInput;
 }
-
-
-userInput = 8
-kilogramConversion = userInput * oneKilogram;
- console.log (kilogramConversion)
 
