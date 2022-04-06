@@ -28,8 +28,3 @@ userInput = 8
 meterConversion = userInput * oneMeter;
  console.log (meterConversion)
 
-const checkbox = document.getElementById('switch')
-
-checkbox.addEventListener('change', (){
-    document.body.classList.toggle('light')
-})
