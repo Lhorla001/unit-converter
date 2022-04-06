@@ -25,6 +25,6 @@ function calC() {
 
 
 userInput = 8
-meterConversion = userInput * oneMeter;
- console.log (meterConversion)
+kilogramConversion = userInput * oneKilogram;
+ console.log (kilogramConversion)
 
