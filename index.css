@@ -11,6 +11,7 @@
     --result-header: #fff;
     --result-text: #D2D2D2;
     --container: #525252;
+    --light-bg-color: #FBF7EE;
 }
 
 html, body {
@@ -20,31 +21,86 @@ html, body {
     font-size: 16px;
 }
 
+body.light {
+    background-color: var(--light-bg-color);
+}
+
+/* Toggle Secttion */
 .container {
+    background-color: var(--header);
+    padding-top: 0.5rem;
+}
+
+.checkbox {
+    opacity: 0;
+    position: absolute;
+}
+
+input:checked + label {
+    background: #c0c0c0;
+}
+
+input:checked + label .fa-sun {
+    transform: translateX(-43px) rotate(160deg);
+    opacity: 0;
+}
+
+input:checked + label .fa-moon {
+    opacity: 1;
+    transform: translateX(0) rotate(0);
+}
+
+input:checked + label .ball {
+    transform: translateX(40px);
+    background: #222;
+}
+  
+label {
     display: flex;
-    justify-content: flex-start;
+    width: 75px;
+    height: 35px;
+    justify-content: space-between;
     align-items: center;
-    gap: 1rem;
-}
-
-.container > div > p    {
+    padding: 0 6px;
+    background: #222;
+    border-radius: 50px;
     cursor: pointer;
-    opacity: 50%;
-    color: var(--result-text);
-    font-size: 1rem;
+    position: relative;
+    transition: 0.3s;
 }
 
-#icon {
-    width: 30px;
-    cursor: pointer;
-    opacity: 50%;
+label i {
+    font-size: 18px;
 }
 
-p {
-    color: var(--result-text);
-    line-height: 2rem;
+label .fa-sun {
+    color: gold;
+    transition: 0.3s;
+    opacity: 1;
 }
 
+label .fa-moon {
+    color: #fff;
+    transition: 0.3s;
+    opacity: 0;
+    transform: translateX(43px) rotate(250deg);
+}
+
+label .ball {
+    display: none;
+    position: absolute;
+    display: block;
+    width: 25px;
+    height: 25px;
+    top: 5px;
+    left: 5px;
+    background: #fff;
+    border-radius: 50%;
+    transition: 0.3s;
+}
+ 
+
+/* Main Screen*/
 h1 {
     font-size: 4rem;
     line-height: 1.25rem;
@@ -58,10 +114,29 @@ h1 {
 
 .screen-section > h1   {
     text-align: center;
-    color: #fff;
+    color: var(--header);
     padding-top: 2rem;
 }
 
+input {
+    background-color: #ffffff00;
+    border: none;
+    width: 100%;
+    margin-top: 2rem;
+    display: block;
+    margin : 3 auto;
+    font-size: 6.09rem;
+    text-align: center;
+    color: var(--header);
+    font-weight: 800;
+}
+
+::placeholder {
+    color: var(--result-header);
+}
+
+
+/* Results Section */
 .conversion-result .conversion-type    {
     color: var(--result-header);
     font-size: 2rem;
@@ -76,23 +151,6 @@ h1 {
     text-align: center;
 }
 
-input {
-    background-color: #ffffff00;
-    border: none;
-    width: 100%;
-    margin-top: 2rem;
-    display: block;
-    margin : 3 auto;
-    font-size: 6.09rem;
-    text-align: center;
-    color: white;
-    font-weight: 800;
-}
-
-::placeholder {
-    color: whitesmoke;
-}
-
 .length {
     margin-top: 1rem;
 }
@@ -103,6 +161,16 @@ input {
 
 .mass {
     margin-top: 3rem;
+}
+
+footer { 
+    font-size: 1rem; 
+    text-align: center; 
+    margin: 7rem;
+}
+
+footer a { 
+    color: hsl(228, 45%, 44%); 
 }
 
 @media screen and (max-width: 1024px) {
