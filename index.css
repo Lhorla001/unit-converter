@@ -95,12 +95,12 @@ footer {
 footer a { 
     color: hsl(228, 45%, 44%); 
     text-decoration: none;
-    color: none;
+    color: var(--header);
 }
 
 a:hover {
     cursor: pointer;
-    color: var(--result-header)
+    color: #FB3796;
 }
 
 /* Media Queries For Mobile */
