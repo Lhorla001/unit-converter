@@ -11,7 +11,6 @@
     --result-header: #fff;
     --result-text: #D2D2D2;
     --container: #525252;
-    --light-bg-color: #FBF7EE;
 }
 
 html, body {
@@ -19,84 +18,6 @@ html, body {
     background-color: var(--bg-color);
     color: var(--header);
     font-size: 16px;
-}
-
-body.light {
-    background-color: var(--light-bg-color);
-}
-
-/* Toggle Secttion */
-.container {
-    background-color: var(--header);
-    padding-top: 0.5rem;
-}
-
-.checkbox {
-    opacity: 0;
-    position: absolute;
-}
-
-input:checked + label {
-    background: #c0c0c0;
-}
-
-input:checked + label .fa-sun {
-    transform: translateX(-43px) rotate(160deg);
-    opacity: 0;
-}
-
-input:checked + label .fa-moon {
-    opacity: 1;
-    transform: translateX(0) rotate(0);
-}
-
-input:checked + label .ball {
-    transform: translateX(40px);
-    background: #222;
-}
-  
-label {
-    display: flex;
-    width: 75px;
-    height: 35px;
-    justify-content: space-between;
-    align-items: center;
-    padding: 0 6px;
-    background: #222;
-    border-radius: 50px;
-    cursor: pointer;
-    position: relative;
-    transition: 0.3s;
-}
-
-label i {
-    font-size: 18px;
-}
-
-label .fa-sun {
-    color: gold;
-    transition: 0.3s;
-    opacity: 1;
-}
-
-label .fa-moon {
-    color: #fff;
-    transition: 0.3s;
-    opacity: 0;
-    transform: translateX(43px) rotate(250deg);
-}
-
-label .ball {
-    display: none;
-    position: absolute;
-    display: block;
-    width: 25px;
-    height: 25px;
-    top: 5px;
-    left: 5px;
-    background: #fff;
-    border-radius: 50%;
-    transition: 0.3s;
 }
  
 
