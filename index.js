@@ -1,4 +1,3 @@
-// metric conversion app
 const oneMeter = 3.28084
 const oneLitre = 0.264172
 const oneKilogram = 2.20462
